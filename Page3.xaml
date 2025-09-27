@@ -9,10 +9,22 @@
             Spacing="25">
             
             <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Text="Teléfono"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                SemanticProperties.Description="tlfn" />
+
+            <Label
+                Text="Para consultas legales, llame al (505) 555-1234. Disponible las 24 horas del día, los 7 días de la semana."
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.Description="descripción tlfn" />
+
+            <Button
+                x:Name="RegresarBtn"
+                Text="Regresar a Inicio"
+                Clicked="BackBtn"
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Regresa a la página principal" />
 
         </VerticalStackLayout>
     </ScrollView>

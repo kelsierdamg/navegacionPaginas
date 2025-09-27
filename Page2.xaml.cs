@@ -12,5 +12,11 @@ namespace navegacionPaginas
         {
             InitializeComponent();
         }
+
+        private async void BackBtn(object sender, EventArgs e)
+        {
+            // Volver a la página anterior
+            await Navigation.PopAsync();
+        }
     }
 }

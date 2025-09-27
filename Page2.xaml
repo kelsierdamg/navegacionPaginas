@@ -7,14 +7,27 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
+
             <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Text="¿Quién es Saúl Goodman?"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-          
+                SemanticProperties.Description="acerca de" />
+
+            <Label
+                Text="Saúl Goodman es un abogado carismático y astuto conocido por su enfoque poco convencional y a menudo cuestionable en la práctica legal. En 'Better Call Saul', se explora su transformación de un abogado con buenas intenciones a un defensor de criminales, mostrando su lucha por encontrar su identidad y éxito en el mundo legal mientras enfrenta desafíos personales y profesionales."
+                Style="{StaticResource Body}"
+                SemanticProperties.Description="descripción acerca de saul goodman" />
+
+            <Button
+                x:Name="RegresarBtn"
+                Text="Regresar a Inicio"
+                Clicked="BackBtn"
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Regresa a la página principal" />
+
         </VerticalStackLayout>
+       
     </ScrollView>
 
 </ContentPage>

@@ -9,16 +9,16 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private async void AboutBtn(object sender, EventArgs e)
         {
-            count++;
+            // Navegar a Page2
+            await Navigation.PushAsync(new Page2());
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void ContactBtn(object sender, EventArgs e)
+        {
+            // Navegar a Page2
+            await Navigation.PushAsync(new Page3());
         }
     }
 }
